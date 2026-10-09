@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的旅行日记</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f7ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #2980b9;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #d6ebff;
+        }
+
+        .banner h2 {
+            font-size: 32px;
+            color: #2471a3;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #21618c;
+        }
+
+        .content {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 220px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ccc;
+        }
+
+        .card h3 {
+            color: #2980b9;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>✈ 我的旅行日记</h1>
+        <p>发现世界的美好</p>
+    </header>
+
+    <nav>
+        <a href="#home">首页</a>
+        <a href="#travel">旅行推荐</a>
+        <a href="#about">关于我们</a>
+    </nav>
+
+    <section class="banner" id="home">
+        <h2>去看看这个美丽的世界</h2>
+        <p>记录旅途风景，发现生活中的美好。</p>
+        <button onclick="showMessage()">开始探索</button>
+    </section>
+
+    <section class="content" id="travel">
+        <h2>旅行推荐</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🏔️ 自然风光</h3>
+                <p>欣赏美丽的山川湖海，感受大自然的魅力。</p>
+            </div>
+
+            <div class="card">
+                <h3>🏙️ 城市旅行</h3>
+                <p>探索不同的城市，体验当地文化和美食。</p>
+            </div>
+
+            <div class="card">
+                <h3>🏖️ 海岛度假</h3>
+                <p>享受阳光、沙滩和轻松愉快的假期。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="about">
+        <p>© 2026 我的旅行日记</p>
+        <p>Web 课程作业</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("欢迎来到我的旅行日记！准备好出发了吗？");
+        }
+    </script>
+
+</body>
+</html>
